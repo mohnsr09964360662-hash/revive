@@ -4,6 +4,7 @@ import { viteSingleFile } from "vite-plugin-singlefile"
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/revive/',
   plugins: [react(), viteSingleFile()],
   build: {
     assetsInlineLimit: 100000000,
