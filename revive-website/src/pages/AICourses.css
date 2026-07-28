@@ -1,0 +1,135 @@
+.ai-page {
+  background-color: #0a0a1a;
+  color: white;
+  min-height: 100vh;
+}
+
+.ai-header {
+  padding: 150px 0 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.particles {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: radial-gradient(circle at center, rgba(39, 167, 104, 0.1) 0%, transparent 70%);
+  z-index: 0;
+}
+
+.ai-header .container {
+  position: relative;
+  z-index: 1;
+}
+
+.glowing-text {
+  font-size: 3.5rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #4bd891, #3498db);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+  text-shadow: 0 0 30px rgba(75, 216, 145, 0.3);
+}
+
+.ai-desc {
+  font-size: 1.2rem;
+  color: #a0a0b0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 20px;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--primary-light), transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.glass-card:hover::before {
+  opacity: 1;
+}
+
+.course-icon {
+  font-size: 2.5rem;
+  color: var(--primary-light);
+  margin-bottom: 20px;
+}
+
+.glass-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.glass-card p {
+  color: #a0a0b0;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  min-height: 50px;
+}
+
+.course-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  font-size: 0.9rem;
+}
+
+.badge {
+  background: rgba(39, 167, 104, 0.2);
+  color: var(--primary-light);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.duration {
+  color: #888;
+}
+
+.btn-register {
+  width: 100%;
+  padding: 12px;
+  background: transparent;
+  border: 1px solid var(--primary-light);
+  color: var(--primary-light);
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-register:hover {
+  background: var(--primary-light);
+  color: #000;
+  box-shadow: 0 0 15px rgba(75, 216, 145, 0.4);
+}

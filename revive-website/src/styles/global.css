@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap');
+
+:root {
+  --primary-color: #27a768; /* Revive Green */
+  --primary-light: #4bd891;
+  --primary-dark: #1e8551;
+  --secondary-color: #4a4543; /* Revive Dark Grey/Brown */
+  --accent-blue: #3498db;
+  --accent-pink: #e84393;
+  --accent-orange: #e67e22;
+  --text-color: #333333;
+  --text-light: #666666;
+  --bg-color: #ffffff;
+  --bg-light: #f8f9fa;
+  --border-radius: 16px;
+  --box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* RTL/LTR Support */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="ltr"] {
+  text-align: left;
+}
+
+/* Button Styles */
+.btn-primary {
+  display: inline-block;
+  padding: 15px 35px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 5px 15px rgba(39, 167, 104, 0.4);
+  transition: var(--transition);
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(39, 167, 104, 0.6);
+}
+
+.btn-outline {
+  display: inline-block;
+  padding: 15px 35px;
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: var(--transition);
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-outline:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(39, 167, 104, 0.4);
+}
+
+/* Section Standards */
+.section-padding {
+  padding: 100px 0;
+}
+
+.bg-light {
+  background-color: var(--bg-light);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-light);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}

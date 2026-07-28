@@ -1,0 +1,43 @@
+.about-image img {
+  width: 100%;
+  border-radius: 30px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.vms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.vms-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: var(--border-radius);
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: var(--transition);
+}
+
+.vms-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--box-shadow);
+}
+
+.vms-icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.vms-card h3 {
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.vms-card p {
+  color: var(--text-light);
+}
